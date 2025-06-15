@@ -1,10 +1,23 @@
-
-
+import DataImage from "./data"
 function App() {
 
   return (
     <>
-       <h1 className="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur at vero voluptatibus impedit amet assumenda tempore laboriosam? Vero suscipit officia ipsum voluptates molestiae ut. Esse neque autem necessitatibus, aspernatur incidunt, ducimus assumenda debitis libero aperiam dignissimos a fugit minus dolorum explicabo non? Ex quod laboriosam at ut nam officiis quaerat, laborum et dignissimos. Ipsum reiciendis, natus ut cupiditate sint officia molestias porro autem? Quos obcaecati cumque corrupti animi, ipsum cum nam dolor repellendus accusantium, iure et asperiores totam impedit aut a eveniet commodi praesentium necessitatibus dolorum delectus optio debitis doloremque! Laudantium ipsam, maiores modi illo, iusto quo ut autem repudiandae veniam quis libero. Odio similique quasi assumenda eveniet animi cupiditate? Laudantium nam necessitatibus, harum odit esse dolorem officia ducimus a quas, sequi at porro quaerat. Rerum assumenda non quam fugit, unde facere exercitationem possimus est eos mollitia, aperiam, voluptatibus quisquam magni nihil vitae officia cum quibusdam voluptas illo debitis impedit eaque aliquam. Nostrum laudantium culpa provident recusandae quisquam veniam eum dicta, quod officia modi debitis quas dolorum deserunt mollitia doloremque adipisci pariatur? Minima at atque vitae aut amet tenetur eum inventore soluta ipsum nihil veniam recusandae sequi, ex magni. Voluptatibus natus esse est cum sapiente maxime dolore corrupti modi placeat voluptates. Molestias ratione quod perferendis eos praesentium architecto delectus. Quae, repudiandae. Qui labore voluptatibus ipsa enim, facere dicta provident magnam a porro. Mollitia esse adipisci repudiandae, quasi numquam incidunt vitae modi dolorem minima architecto blanditiis omnis et quidem, nulla beatae asperiores odio tenetur delectus officiis excepturi saepe consequuntur. Libero adipisci beatae pariatur tempora, voluptates impedit aspernatur natus odio expedita? Voluptates aperiam natus laboriosam, eos pariatur, ut ad laudantium atque similique, corporis deserunt quam perferendis. Eius numquam officia sequi obcaecati labore adipisci, nemo earum perferendis quibusdam, ea in totam necessitatibus praesentium tempora voluptates doloribus voluptate. Cumque quaerat suscipit soluta ipsa aut ducimus aperiam nesciunt commodi porro earum magnam eaque a corporis quibusdam, voluptatum exercitationem, animi, deserunt explicabo minus fugit labore tempora nemo voluptates. Nulla omnis vel modi quasi iure tempore? Quas suscipit eos repudiandae at, porro earum architecto quam ab veniam nihil. Ullam voluptates soluta natus explicabo accusantium perspiciatis ducimus adipisci? Eius ullam ex pariatur, quo odio hic dolorum. Ut in reprehenderit corporis pariatur voluptatem magnam praesentium deserunt, a reiciendis ipsum rerum modi debitis! Repellat animi architecto corporis dignissimos fugit, optio aspernatur neque consequatur iure fuga provident debitis amet in beatae odio vel inventore nulla voluptate minima. Unde, molestiae quidem?</h1>
+       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+        <div>
+          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+            <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" />
+            <q>Kode yang indah, Lahir dari ketekunan.😁</q>
+          </div>
+          <h1 className="text-4xl/tight font-bold top-10 mb-6">Hi, Saya Syahdan Mutahariq</h1>
+          <p className="text-base/loose mb-6 opacity-50">Saya mempunyai ketertarikan dalam bidang Programming dan Designer, terutama pada pembuatan Website dan Desain seperti Poster, Pamflet serta Banner, ketertarikan pada bidang ini sudah berlangsung lebih dari 4 Tahun untuk semua Bidang.</p>
+          <div className="flex items-center sm:gap-4 gap-2">
+            <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">Download CV <i class="ri-download-line ri-lg"></i></a>
+            <a href="#" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Lihat Proyek <i class="ri-arrow-down-line ri-lg"></i></a>
+          </div>
+        </div>
+          <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto" />
+       </div>
     </>
   )
 }
