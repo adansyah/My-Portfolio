@@ -17,15 +17,12 @@ import Tools8 from "/assets/tools/github.png";
 import Tools9 from "/assets/tools/ai.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
+import Tools12 from "/assets/tools/laravel.png";
+import Tools13 from "/assets/tools/php_.png";
+import Tools15 from "/assets/tools/mysql.png";
 
 export const listTools = [
-  {
-    id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
-  },
+  
   {
     id: 2,
     gambar: Tools2,
@@ -40,6 +37,14 @@ export const listTools = [
     ket: "Framework",
     dad: "300",
   },
+  {
+    id: 12,
+    gambar: Tools12,
+    nama: "Laravel",
+    ket: "Framework",
+    dad: "1200",
+  },
+
   {
     id: 4,
     gambar: Tools4,
@@ -62,6 +67,20 @@ export const listTools = [
     dad: "600",
   },
   {
+    id: 13,
+    gambar: Tools13,
+    nama: "PHP",
+    ket: "Language",
+    dad: "1300",
+  },
+  {
+    id: 15,
+    gambar: Tools15,
+    nama: "MySql",
+    ket: "Database",
+    dad: "1500",
+  },
+   {
     id: 7,
     gambar: Tools7,
     nama: "Node JS",
@@ -75,13 +94,7 @@ export const listTools = [
     ket: "Repository",
     dad: "800",
   },
-  {
-    id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
-  },
+  
   {
     id: 10,
     gambar: Tools10,
@@ -89,6 +102,7 @@ export const listTools = [
     ket: "Design App",
     dad: "1000",
   },
+  
   {
     id: 11,
     gambar: Tools11,
@@ -96,6 +110,7 @@ export const listTools = [
     ket: "Design App",
     dad: "1100",
   },
+  
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.webp";
