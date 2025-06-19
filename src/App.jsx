@@ -3,6 +3,7 @@ import DataImage from "./data"
 import {listTools, listProyek} from "./data"
 import { useEffect, useState } from "react";
 import { Typewriter } from 'react-simple-typewriter';
+import {motion} from "framer-motion";
 function App() {
   // const textRef = useRef(null);
 
@@ -45,6 +46,7 @@ function App() {
     return () => clearTimeout(timeout);
   }, [index, isDeleting]);
 
+  
   return (
     <>
        <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
@@ -86,19 +88,38 @@ function App() {
 
       {/* Tools */}
         <div className="tools mt-32">
-          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="text-4xl/snug font-bold mb-4 text-center ">Tools yang dipakai</h1>
-          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" className="text-center  text-base/snug opacity-50">Berikut ini beberapa tools yang biasa saya pakai untuk membuat Website ataupun Design</p>
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"  className="text-4xl/snug font-bold mb-4 text-center ">Tools yang dipakai</h1>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300"  className="text-center  text-base/snug opacity-50">Berikut ini beberapa tools yang biasa saya pakai untuk membuat Website ataupun Design</p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
-            {listTools.map(tools => (
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tools.dad} data-aos-once="true" className="group flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800" key={tools.id}>
-              <img src={tools.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900" loading="lazy" />
-              <div>
-                <h4 className="font-bold">{tools.nama}</h4>
-                <p className="opacity-50">{tools.ket}</p>
-              </div>
-            </div>
+            {listTools.map((tools) => (
+              <motion.div
+                key={tools.id}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="transition-transform"
+              >
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay={tools.dad}
+                  data-aos-once="true"
+                  className="group flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800"
+                >
+                  <img
+                    src={tools.gambar}
+                    alt="Tools Image"
+                    className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4 className="font-bold">{tools.nama}</h4>
+                    <p className="opacity-50">{tools.ket}</p>
+                  </div>
+                </div>
+              </motion.div>
             ))}
+
           </div>
         </div>
        </div>
