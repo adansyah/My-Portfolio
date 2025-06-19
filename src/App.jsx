@@ -77,12 +77,37 @@ function App() {
                     ))}
                   </div>
                   <div className="mt-8 text-center">
-                    <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 ">Lihat Website</a>
+                    <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">Lihat Website</a>
                   </div>
                 </div>
               </div>
             ))}
         </div>
+       </div>
+
+       {/* Kontak */}
+       <div className="kontak mt-32 p-10">
+        <h1 className="text-4xl font-bold text-center">Kontak</h1>
+        <p className="text-base/loose text-center mb-10 opacity-50">Mari terhubung dengan saya.</p>
+        <form action="https://formsubmit.co/adansyah225@gmail.com" method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="" className="font-semibold">Nama Lengkap</label>
+              <input type="text" name="nama" className="border border-zinc-500 p-2 rounded-md" placeholder="Masukan Nama..." required />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="" className="font-semibold">Email</label>
+              <input type="email" name="email" className="border border-zinc-500 p-2 rounded-md" placeholder="Masukan Email..." required />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="pesan" className="font-semibold">Pesan</label>
+              <textarea name="pesan" className="border border-zinc-500 p-2 rounded-md" cols="45" rows="7" id="" placeholder="Pesan..." required></textarea>
+            </div>
+            <div className="text-center">
+             <button type="submit" className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600 ">Kirim Pesan</button>
+            </div>
+          </div>
+        </form>
        </div>
     </>
   )
